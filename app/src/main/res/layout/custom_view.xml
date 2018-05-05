@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="384dp"
+        android:layout_height="201dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/commentText"
+        app:layout_constraintEnd_toEndOf="@+id/likes"
+        app:layout_constraintStart_toEndOf="@+id/likes"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+
+    <TextView
+        android:id="@+id/commentText"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/comments"
+        app:layout_constraintEnd_toEndOf="@+id/likes"
+        app:layout_constraintStart_toEndOf="@+id/likes"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/likes"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/comments"
+        app:layout_constraintEnd_toStartOf="@+id/comments"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/comments"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="goComments"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/likes"
+        app:layout_constraintTop_toBottomOf="@+id/commentText" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,4 @@
+#Tue May 01 13:59:03 EET 2018
+base.0=C\:\\Users\\user\\AndroidStudioProjects\\FirebaseInstagram\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\48
+path.0=classes.dex
+renamed.0=classes.dex

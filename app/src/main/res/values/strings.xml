@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FirebaseInstagram</string>
+    <string name="title_activity_profil">ProfilActivity</string>
+    <string name="title_activity_comments">CommentsActivity</string>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/alan"
+        android:layout_width="260dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="#b2ff59"
+        android:gravity="right"
+        android:textColor="#eefffc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/icerik" />
+
+    <TextView
+        android:id="@+id/gonderen"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#b2ff59"
+        android:gravity="left|right"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="#eefffc"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/icerik"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.979"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/icerik"
+        android:layout_width="260dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="40dp"
+        android:background="#b2ff59"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textAlignment="center"
+        android:textColor="#eefffc"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.984"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>
